@@ -1,0 +1,62 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 10vh;
+    font-size: 1.55rem;
+    width: 100%;
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 2.5rem;
+    height: 5rem;
+    gap:50px
+}
+
+.smallnavlinks {
+
+    display: none;
+}
+
+.smallnavnav
+    {
+        display: none;
+        transition: 0.5s;
+
+    }
+
+@media (max-width: 900px) {
+    
+
+    .navlinks {
+        display: none;
+    }
+
+    .smallnavlinks {
+        display: flex;
+    }
+
+    .smallnavnav
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 20vh;
+        gap:7vh;
+        position: absolute;
+        top: 100 px;
+        left:0;
+        width:100vw;
+        height: 100vh;
+        backdrop-filter: blur(50px);
+       z-index: 5;
+    }
+}
+
